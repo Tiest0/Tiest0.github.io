@@ -1,0 +1,52 @@
+{
+  "name": "mira-template",
+  "version": "0.6.1",
+  "scripts": {
+    "start:all": "concurrently \"npm run lite\" \"npm run sass:w\" \"npm run pug:w\" \"npm run pug:w2\" \"npm run tsc:w\" \"npm run cpx:w\"",
+    "start:sptc": "concurrently \"npm run sass:w\" \"npm run pug:w\" \"npm run pug:w2\" \"npm run tsc:w\" \"npm run cpx:w\"",
+    "start:lspc": "concurrently \"npm run lite\" \"npm run sass:w\" \"npm run pug:w\" \"npm run pug:w2\" \"npm run cpx:w\"",
+    "start:spc": "concurrently \"npm run sass:w\" \"npm run pug:w\" \"npm run pug:w2\" \"npm run cpx:w\"",
+    "lite": "lite-server --baseDir=\"app/dist\"",
+    "cpx:w": "cpx \"app/src/**/*.{html,png,jpg,svg,js,css,mp4,eot,ttf,woff,woff2,webm}\" app/dist --watch",
+    "cpx:build": "cpx \"app/src/**/*.{html,png,jpg,svg,js,css,mp4,eot,ttf,woff,woff2,webm}\" app/dist",
+    "tsc:build": "tsc",
+    "tsc:w": "tsc -w",
+    "rollup": "rollup -c rollup.config.js",
+    "pug:build": "pug app/src -o app/dist -b app/src -P",
+    "pug:w": "pug app/src -o app/dist -P -w",
+    "pug:w2": "onchange \"app/src/**/*.pug\" -f add -- npm run pug:build",
+    "sass:w": "node-sass -w app/src/scss -o app/dist/css",
+    "sass:build": "node-sass --output-style compressed -o app/dist/css app/src/scss",
+    "css:build": "npm run sass:build && npm run autoprefixer",
+    "autoprefixer": "postcss --no-map -u autoprefixer -r app/dist/css/*",
+    "imagemin": "imagemin app/src/img -o app/dist/img",
+    "prod:build": "npm run css:build && npm run pug:build && npm run tsc:build && npm run cpx:build"
+  },
+  "licenses": [],
+  "dependencies": {
+    "pug": "^2.0.0-rc.2",
+    "rxjs": "^5.3.0",
+    "sass": "^1.0.0-beta.1",
+    "watch-run": "^1.2.5"
+  },
+  "devDependencies": {
+    "@types/es6-promise": "^0.0.32",
+    "@types/rx": "^4.1.1",
+    "autoprefixer": "^7.1.2",
+    "concurrently": "^3.4.0",
+    "cpx": "^1.5.0",
+    "imagemin-cli": "^3.0.0",
+    "lite-server": "^2.3.0",
+    "node-sass": "^4.5.3",
+    "onchange": "^3.3.0",
+    "postcss-cli": "^4.1.0",
+    "pug-cli": "^1.0.0-alpha6",
+    "rollup": "^0.41.6",
+    "rollup-plugin-commonjs": "^8.0.2",
+    "rollup-plugin-node-resolve": "^3.0.0",
+    "rollup-plugin-uglify": "^1.0.2",
+    "systemjs": "^0.20.12",
+    "tslint": "^5.1.0",
+    "typescript": "^2.3.2"
+  }
+}
