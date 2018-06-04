@@ -1,0 +1,113 @@
+.body-footer{
+    width: 100%;
+    height: 133px;
+    background: url(../img/footer.png) repeat-y center;
+    background-position: top;
+    background-size:cover;
+    display: flex;
+    justify-content: center;
+}
+
+.container-footer{
+  font-size: 15px;
+  font-family: "OpenSans";
+  color: rgb(119, 131, 141);
+  line-height: 1.2;
+  width: 100%;
+  max-width: 1140px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  padding: 15px 0 0 0 ;
+}
+
+
+
+.footer-top{
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.footer-top a{
+  font-size: 15px;
+  font-family: "open sans";
+  color: rgb(119, 131, 141);
+  line-height: 1.2;
+}
+
+.footer-bottom{
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.footer-bottom a{
+  text-align: center;
+ text-decoration: underline;
+ color: green;
+}
+
+.footer-top img{
+  align-self: center;
+}
+
+.address, .tel, .mail, .social{
+  margin: 0px 0 10px 0;
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+}
+
+.footer-top p{
+  margin: 0px 0 0 0;
+}
+
+.footer-top a{
+  margin: 0px 0 0 0;
+}
+
+.one{
+  margin: 0 5px 0 0;
+}
+
+@media (max-width: 1110px) {
+  .header-menu, .text0, .lang, .head-tel{
+    display: none;
+  }
+  .burger{
+    display: block;
+  }
+
+.logo-brand{
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+}
+
+div.address, div.tel, div.mail{
+  display: none;
+}
+
+div.slider-fon2, div.slider-fon3{
+  display: none;
+}
+
+
+.logo{
+  flex-shrink: 2;
+  flex-basis: 150px;
+  margin: 5px;
+}
+
+.ikon-sol{
+  display: flex;
+  flex-direction: column;
+}
+
+.ikon{
+  display: none;
+}
+
+}

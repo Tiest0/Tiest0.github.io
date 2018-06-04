@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+html(lang="en")
+	head
+		meta(charset="UTF-8")
+		meta(http-equiv="X-UA-Compatible", content="IE=edge")
+		meta(name="viewport", content="width=device-width, initial-scale=1")
+		link(rel="stylesheet", href="css/owl.carousel.css")
+		link(rel="stylesheet", href="css/simplebar.css")
+		link(rel="stylesheet", href="css/fSelect.css")
+		link(rel="stylesheet", href="css/jquery.fancybox.css")
+		link(rel="stylesheet", href="fonts/ProximaNova/stylesheet.css")
+		link(rel='stylesheet', href='fonts/open sans/stylesheet.css')
+		link(rel='stylesheet', href='fonts/glober/stylesheet.css')
+		link(rel='stylesheet', href='fonts/open sans2/opensans.css')
+		<link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
+		link(rel="stylesheet", href="css/main.css")
+		title Title
+	
+	block vars
+	- var MODE = "dev";
+	body(class=bodyClass)
+		.all-wrapper
+			include _header
+
+			block content
+
+		include _footer
+
+		block externalScripts
+		script(src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js")
+
+		block scripts
+		script(src="lib/jquery.inputmask.js")
+		script(src="js/accordion.js")
+		script(src="js/accordion-cookie.js")
+		script(src="js/owl.carousel.js")
+		script(src="js/simplebar.js")
+		script(src="js/fSelect.js")
+		script(src="js/jquery.fancybox.js")
+		script(src="js/jquery.maskedinput.js")
+		
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.1.0/js/swiper.min.js"></script>
+		script(src="js/scripts.js")
+		case MODE
+			when "dev"
+				script(src="https://unpkg.com/systemjs@0.19.39/dist/system.src.js")
+				script(src="systemjs.config.js")
+				script.
+					SystemJS.import('js');
+			when "prod"
+				script(src="js/main.min.js")
+				
+
+
+		block inlineScripts
