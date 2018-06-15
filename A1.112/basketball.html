@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="css/simplebar.css"/>
     <link rel="stylesheet" href="css/fSelect.css"/>
     <link rel="stylesheet" href="css/jquery.fancybox.css"/>
+    <link rel="stylesheet" href="css/swiper.min.css"/>
     <link rel="stylesheet" href="fonts/ProximaNova/stylesheet.css"/>
     <link rel="stylesheet" href="fonts/open sans/stylesheet.css"/>
     <link rel="stylesheet" href="fonts/glober/stylesheet.css"/>
@@ -19,11 +20,12 @@
     <div class="all-wrapper">
       <header class="header">
         <div class="header-container">
-          <div class="burger"></div>
-          <div class="head-logo"><img src="img/logo.png" alt=""/></div>
+          <div class="head-logo">
+            <div class="text0">A1.112</div>
+          </div>
           <div class="head-menu">
             <ul class="header-menu">
-              <li class="drop"><a href="#">бренды</a>
+              <li class="drop"><a class="nav" href="#section">бренды</a>
                 <ul>
                   <li><a href="#">brend</a></li>
                   <li><a href="#">brend</a></li>
@@ -31,27 +33,34 @@
                   <li><a href="#">brend</a></li>
                 </ul>
               </li>
-              <li class="drop"><a href="#">услуги</a>
+              <li class="drop"><a class="nav" href="#">услуги</a>
                 <ul>
-                  <li><a href="#">brend</a></li>
-                  <li><a href="#">brend</a></li>
-                  <li><a href="#">brend</a></li>
                   <li><a href="#">brend</a></li>
                 </ul>
               </li>
-              <li><a href="#">о компании</a></li>
-              <li><a href="#">блог</a></li>
-              <li><a href="#">контакты</a></li>
+              <li><a class="nav" href="#">о компании</a></li>
+              <li><a class="nav" href="#">контакты</a></li>
             </ul>
           </div>
-          <div class="text0">|</div>
-          <div class="lang">
-            <select name="" id="">
-              <option value="">ру</option>
-              <option value="">en</option>
-            </select>
+          <div class="head-tel">
+            <div class="social">
+              <div class="mails"></div><a href="A1.112@yandex.ru"><img src="img/email.png" alt="" width="32px" height="32px"/></a><a href="A1.112@yandex.ru"><img src="img/telegram.png" alt="" width="32px" height="32px"/></a><a href="https://vk.com"><img src="img/vk.png" alt="" width="32px" height="32px"/></a>
+            </div><a href="tel:+7 (987) 394-06-76">+7 (987) 394-06-76	</a>
+          </div><a class="mobale-link"><span></span></a>
+          <div class="mobale">
+            <ul>
+              <li><a href="#brend">бренды</a></li>
+              <li><a href="#prais">услуги</a></li>
+              <li><a href="#company">о компании</a></li>
+              <li><a href="#">контакты</a></li>
+            </ul>
+            <div class="tel_mobale">
+              <div class="socials">
+                <div class="mails"></div><a href="A1.112@yandex.ru"><img src="img/Mail_31108.png" alt="" width="35px" height="35px"/></a><a href="A1.112@yandex.ru"><img src="img/telegram.png" alt="" width="32px" height="32px"/></a><a href="https://vk.com"><img src="img/vk.png" alt="" width="32px" height="32px"/></a>
+              </div>
+              <div class="tel"><a href="tel:+7 (987) 394-06-76">+7 (987) 394-06-76</a></div>
+            </div>
           </div>
-          <div class="head-tel"><a href="tel:+7 (495) 150-39-93">+7 (495) 150-39-93</a></div>
         </div>
       </header>
       <div class="block-top">
@@ -312,17 +321,17 @@
     <div class="body-footer">
       <div class="container-footer">
         <div class="footer-top">
-          <div class="footer-logo"><img class="one" src="img/footerlogo.png" alt=""/></div>
+          <div class="text01">A1.112</div>
           <div class="address"><img class="one" src="img/figura.png" alt=""/>
-            <p class="footer-text">г. Москва 109004 ул Земляной Вал 50А 8 с2</p>
+            <p class="footer-text">г. Нижний Новгород</p>
           </div>
-          <div class="tel"><img class="one" src="img/tel.png" alt=""/><a href="tel:+7 (495) 502-99-20">+7 495 150 39 93</a></div>
-          <div class="mail"><img class="one" src="img/mail.png" alt=""/><a href="#">info@navicadata.ru</a></div>
-          <div class="social"><img class="one" src="img/vk.png" alt=""/><img src="img/face.png" alt=""/></div>
+          <div class="tel"><img class="one" src="img/tel.png" alt=""/><a href="tel:+7 (987) 394-06-76">+7 (987) 394-06-76</a></div>
+          <div class="mail"><img class="one" src="img/mail.png" alt=""/><a href="A1.112@yandex.ru">A1.112@yandex.ru</a></div>
+          <div class="social"><a href="https://vk.com/"><img class="one" src="img/vk.png" alt=""/></a></div>
         </div>
         <div class="footer-bottom">
-          <div class="footer-text">@ Navicadata. Все права защищены.</div>
-          <div class="footer-text">разарботка сайта: <a href="#">beluga labs</a></div>
+          <div class="footer-text">Все права защищены.</div>
+          <div class="footer-text">разарботка сайта: <a href="#"> </a></div>
         </div>
       </div>
     </div>
@@ -332,9 +341,10 @@
     <script src="js/accordion-cookie.js"></script>
     <script src="js/owl.carousel.js"></script>
     <script src="js/simplebar.js"></script>
+    <script src="js/swiper.min.js"></script>
     <script src="js/fSelect.js"></script>
     <script src="js/jquery.fancybox.js"></script>
-    <script src="js/jquery.maskedinput.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.1.0/js/swiper.min.js"></script>
+    <script src="js/jquery.maskedinput.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.3.3/js/swiper.min.js"></script>
     <script src="js/scripts.js"></script>
     <script src="https://unpkg.com/systemjs@0.19.39/dist/system.src.js"></script>
     <script src="systemjs.config.js"></script>

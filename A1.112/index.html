@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="css/simplebar.css"/>
     <link rel="stylesheet" href="css/fSelect.css"/>
     <link rel="stylesheet" href="css/jquery.fancybox.css"/>
+    <link rel="stylesheet" href="css/swiper.min.css"/>
     <link rel="stylesheet" href="fonts/ProximaNova/stylesheet.css"/>
     <link rel="stylesheet" href="fonts/open sans/stylesheet.css"/>
     <link rel="stylesheet" href="fonts/glober/stylesheet.css"/>
@@ -19,11 +20,12 @@
     <div class="all-wrapper">
       <header class="header">
         <div class="header-container">
-          <div class="burger"></div>
-          <div class="head-logo"><img src="img/logo.png" alt=""/></div>
+          <div class="head-logo">
+            <div class="text0">A1.112</div>
+          </div>
           <div class="head-menu">
             <ul class="header-menu">
-              <li class="drop"><a href="#">бренды</a>
+              <li class="drop"><a class="nav" href="#section">бренды</a>
                 <ul>
                   <li><a href="#">brend</a></li>
                   <li><a href="#">brend</a></li>
@@ -31,167 +33,145 @@
                   <li><a href="#">brend</a></li>
                 </ul>
               </li>
-              <li class="drop"><a href="#">услуги</a>
+              <li class="drop"><a class="nav" href="#">услуги</a>
                 <ul>
-                  <li><a href="#">brend</a></li>
-                  <li><a href="#">brend</a></li>
-                  <li><a href="#">brend</a></li>
                   <li><a href="#">brend</a></li>
                 </ul>
               </li>
-              <li><a href="#">о компании</a></li>
-              <li><a href="#">блог</a></li>
-              <li><a href="#">контакты</a></li>
+              <li><a class="nav" href="#">о компании</a></li>
+              <li><a class="nav" href="#">контакты</a></li>
             </ul>
           </div>
-          <div class="text0">|</div>
-          <div class="lang">
-            <select name="" id="">
-              <option value="">ру</option>
-              <option value="">en</option>
-            </select>
+          <div class="head-tel">
+            <div class="social">
+              <div class="mails"></div><a href="A1.112@yandex.ru"><img src="img/email.png" alt="" width="32px" height="32px"/></a><a href="A1.112@yandex.ru"><img src="img/telegram.png" alt="" width="32px" height="32px"/></a><a href="https://vk.com"><img src="img/vk.png" alt="" width="32px" height="32px"/></a>
+            </div><a href="tel:+7 (987) 394-06-76">+7 (987) 394-06-76	</a>
+          </div><a class="mobale-link"><span></span></a>
+          <div class="mobale">
+            <ul>
+              <li><a href="#brend">бренды</a></li>
+              <li><a href="#prais">услуги</a></li>
+              <li><a href="#company">о компании</a></li>
+              <li><a href="#">контакты</a></li>
+            </ul>
+            <div class="tel_mobale">
+              <div class="socials">
+                <div class="mails"></div><a href="A1.112@yandex.ru"><img src="img/Mail_31108.png" alt="" width="35px" height="35px"/></a><a href="A1.112@yandex.ru"><img src="img/telegram.png" alt="" width="32px" height="32px"/></a><a href="https://vk.com"><img src="img/vk.png" alt="" width="32px" height="32px"/></a>
+              </div>
+              <div class="tel"><a href="tel:+7 (987) 394-06-76">+7 (987) 394-06-76</a></div>
+            </div>
           </div>
-          <div class="head-tel"><a href="tel:+7 (495) 150-39-93">+7 (495) 150-39-93</a></div>
         </div>
       </header>
       <div class="body">
-        <div class="container-body">
+        <div class="container-body" id="company">
           <div class="body-text">
-            <h1>Официальный дистрибьютор<br/> IT  оборудования</h1>
-            <p>Компания Навика Дата является официальным дистрибьютором ведущих <br/> мировых вендоров.</p>
-          </div>
-          <div class="body-btn"><a class="text-btn" href="#">подробнее</a></div>
+            <h1>Официальный дистрибьютор<br/> электрооборудования</h1>
+            <p>A1.112 является официальным партнером ведущих <br/> мировых вендоров.</p>
+          </div><a class="text-btn" href="#">
+            <div class="btn btn-blue">подробнее</div></a>
         </div>
       </div>
-      <div class="brand-body">
+      <div class="brand-body" id="brend">
         <div class="container-brand">
           <div class="text-brand">Наши бренды</div>
-          <div class="logo-brand">
-            <div class="logo"><img src="img/brend.png" alt=""/></div>
-            <div class="logo"><img src="img/brend3.png" alt=""/></div>
-            <div class="logo"><img src="img/brend5.png" alt=""/></div>
-            <div class="logo"><img src="img/brend7.png" alt=""/></div>
-            <div class="logo"><img src="img/brend9.png" alt=""/></div>
-          </div>
-          <div class="logo-brand">
-            <div class="logo"><img src="img/brend2.png" alt=""/></div>
-            <div class="logo"><img src="img/brend4.png" alt=""/></div>
-            <div class="logo"><img src="img/brend6.png" alt=""/></div>
-            <div class="logo"><img src="img/brend8.png" alt=""/></div>
-            <div class="logo"><img src="img/brend10.png" alt=""/></div>
+          <div class="swiper-container">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide"> 
+                <div class="logo"><img src="img/alur.png" alt=""/></div>
+              </div>
+              <div class="swiper-slide"> 
+                <div class="logo"><img src="img/abb.png" alt=""/></div>
+              </div>
+              <div class="swiper-slide"> 
+                <div class="logo"><img src="img/cabelniyalyans.png" alt=""/></div>
+              </div>
+              <div class="swiper-slide"> 
+                <div class="logo"><img src="img/csoft.png" alt=""/></div>
+              </div>
+              <div class="swiper-slide"> 
+                <div class="logo"><img src="img/dkc.png" alt=""/></div>
+              </div>
+              <div class="swiper-slide"> 
+                <div class="logo"><img src="img/ekf.png" alt=""/></div>
+              </div>
+              <div class="swiper-slide">
+                <div class="logo"><img src="img/energomera.png" alt=""/></div>
+              </div>
+              <div class="swiper-slide">
+                <div class="logo"><img src="img/galad.png" alt=""/></div>
+              </div>
+              <div class="swiper-slide">
+                <div class="logo"><img src="img/hyperline.png" alt=""/></div>
+              </div>
+              <div class="swiper-slide"> 
+                <div class="logo"><img src="img/iek.png" alt=""/></div>
+              </div>
+              <div class="swiper-slide"> 
+                <div class="logo"><img src="img/itk.png" alt=""/></div>
+              </div>
+              <div class="swiper-slide"> 
+                <div class="logo"><img src="img/jazzway.png" alt=""/></div>
+              </div>
+              <div class="swiper-slide"> 
+                <div class="logo"><img src="img/keaz.png" alt=""/></div>
+              </div>
+              <div class="swiper-slide"> 
+                <div class="logo"><img src="img/konkord.png" alt=""/></div>
+              </div>
+              <div class="swiper-slide"> 
+                <div class="logo"><img src="img/kontaktor.png" alt=""/></div>
+              </div>
+              <div class="swiper-slide"> 
+                <div class="logo"><img src="img/legrend.png" alt=""/></div>
+              </div>
+              <div class="swiper-slide"> 
+                <div class="logo"><img src="img/nanosoft.png" alt=""/></div>
+              </div>
+              <div class="swiper-slide"> 
+                <div class="logo"><img src="img/nanosoft_ipro.png" alt=""/></div>
+              </div>
+              <div class="swiper-slide">
+                <div class="logo"><img src="img/navigator.png" alt=""/></div>
+              </div>
+              <div class="swiper-slide">
+                <div class="logo"><img src="img/nexans.png" alt=""/></div>
+              </div>
+              <div class="swiper-slide"> 
+                <div class="logo"><img src="img/philips.png" alt=""/></div>
+              </div>
+              <div class="swiper-slide"> 
+                <div class="logo"><img src="img/rek.png" alt=""/></div>
+              </div>
+              <div class="swiper-slide"> 
+                <div class="logo"><img src="img/se.png" alt=""/></div>
+              </div>
+              <div class="swiper-slide"> 
+                <div class="logo"><img src="img/siemens.png" alt=""/></div>
+              </div>
+              <div class="swiper-slide"> 
+                <div class="logo"><img src="img/svetovietechnologii.png" alt=""/></div>
+              </div>
+            </div>
+            <div class="swiper-pagination"></div>
           </div>
         </div>
       </div>
-      <div class="body-sol">
-        <div class="container-sol">
-          <div class="text-sol">
-            <h4>Комплексные решения</h4>
-            <p>Помимо IT оборудования, мы также предлагаем полный спектр <br/> сопутствующих услуг:</p>
-          </div>
-          <div class="ikon-sol">
-            <div class="ikon">
-              <div><img src="img/ikon.png" alt=""/></div><a href="#">Логистические и <br/> транспортные услуги</a>
-            </div>
-            <div class="ikon">
-              <div><img src="img/ikon2.png" alt=""/></div><a href="#">IT аутсорсинг</a>
-            </div>
-            <div class="ikon">
-              <div><img src="img/ikon3.png" alt=""/></div><a href="#">IT консалтинг</a>
-            </div>
-            <div class="ikon">
-              <div><img src="img/ikon4.png" alt=""/></div><a href="#">Организация услуг <br/> защищенной связи и <br/> передачи данных</a>
-            </div>
-            <div class="ikon">
-              <div><img src="img/ikon5.png" alt=""/></div><a href="#">Предоставление облачных <br/> сервисов</a>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="body-slider">
+      <div class="body-slider" id="prais">
         <div class="container-slider">
           <div class="text-slider">
-            <p>Блог</p>
+            <p>наш товар</p>
           </div>
-          <div class="box-slider owl-carousel owl-theme">
-            <div class="item">
-              <div class="slider1">
-                <div class="slider-fon"></div>
-                <div class="text-slider1">
-                  <h3>Постоянный рост и сфера нашей активности</h3>
-                  <p>Значимость этих проблем настолько очевидна, что укрепление и развитие структуры требуют определения и уточнения существенных финансов ...</p>
-                </div>
-              </div>
-              <div class="slider2">
-                <div class="slider-fon1"></div>
-                <div class="text-slider1">
-                  <h3>Консультация с широким активом способствует подготовке</h3>
-                  <p>Значимость этих проблем настолько очевидна, что укрепление и развитие структуры требуют определения и уточнения существенных финансов ...</p>
-                </div>
-              </div>
+          <div class="prais">
+            <div class="prais_item1">
+              <p class="text-slider">Комерчиские проекты </p>
+              <div class="foto" style="background-image:url(../img/14921430539377.jpg);"></div><a class="text-btn" href="#">
+                <div class="btn btn-blue">подробнее</div></a>
             </div>
-            <div class="item">
-              <div class="slider1">
-                <div class="slider-fon2"></div>
-                <div class="text-slider1">
-                  <h3>Постоянный рост и сфера нашей активности</h3>
-                  <p>Значимость этих проблем настолько очевидна, что укрепление и развитие структуры требуют определения и уточнения существенных финансов ...</p>
-                </div>
-              </div>
-              <div class="slider2">
-                <div class="slider-fon3"></div>
-                <div class="text-slider1">
-                  <h3>Постоянный рост и сфера нашей активности</h3>
-                  <p>Значимость этих проблем настолько очевидна, что укрепление и развитие структуры требуют определения и уточнения существенных финансов ...</p>
-                </div>
-              </div>
-            </div>
-            <div class="item">
-              <div class="slider1">
-                <div class="slider-fon"></div>
-                <div class="text-slider1">
-                  <h3>Постоянный рост и сфера нашей активности</h3>
-                  <p>Значимость этих проблем настолько очевидна, что укрепление и развитие структуры требуют определения и уточнения существенных финансов ...</p>
-                </div>
-              </div>
-              <div class="slider2">
-                <div class="slider-fon1"></div>
-                <div class="text-slider1">
-                  <h3>Постоянный рост и сфера нашей активности</h3>
-                  <p>Значимость этих проблем настолько очевидна, что укрепление и развитие структуры требуют определения и уточнения существенных финансов ...</p>
-                </div>
-              </div>
-            </div>
-            <div class="item">
-              <div class="slider1">
-                <div class="slider-fon2"></div>
-                <div class="text-slider1">
-                  <h3>Постоянный рост и сфера нашей активности</h3>
-                  <p>Значимость этих проблем настолько очевидна, что укрепление и развитие структуры требуют определения и уточнения существенных финансов ...</p>
-                </div>
-              </div>
-              <div class="slider2">
-                <div class="slider-fon3"></div>
-                <div class="text-slider1">
-                  <h3>Постоянный рост и сфера нашей активности</h3>
-                  <p>Значимость этих проблем настолько очевидна, что укрепление и развитие структуры требуют определения и уточнения существенных финансов ...</p>
-                </div>
-              </div>
-            </div>
-            <div class="item">
-              <div class="slider1">
-                <div class="slider-fon"></div>
-                <div class="text-slider1">
-                  <h3>Постоянный рост и сфера нашей активности</h3>
-                  <p>Значимость этих проблем настолько очевидна, что укрепление и развитие структуры требуют определения и уточнения существенных финансов ...</p>
-                </div>
-              </div>
-              <div class="slider2">
-                <div class="slider-fon1"></div>
-                <div class="text-slider1">
-                  <h3>Постоянный рост и сфера нашей активности</h3>
-                  <p>Значимость этих проблем настолько очевидна, что укрепление и развитие структуры требуют определения и уточнения существенных финансов ...</p>
-                </div>
-              </div>
+            <div class="prais_item2">
+              <p class="text-slider">Частные лица</p>
+              <div class="foto" style="background-image:url(../img/14921430539377.jpg);"></div><a class="text-btn" href="#">
+                <div class="btn btn-blue">подробнее</div></a>
             </div>
           </div>
         </div>
@@ -200,17 +180,17 @@
     <div class="body-footer">
       <div class="container-footer">
         <div class="footer-top">
-          <div class="footer-logo"><img class="one" src="img/footerlogo.png" alt=""/></div>
+          <div class="text01">A1.112</div>
           <div class="address"><img class="one" src="img/figura.png" alt=""/>
-            <p class="footer-text">г. Москва 109004 ул Земляной Вал 50А 8 с2</p>
+            <p class="footer-text">г. Нижний Новгород</p>
           </div>
-          <div class="tel"><img class="one" src="img/tel.png" alt=""/><a href="tel:+7 (495) 502-99-20">+7 495 150 39 93</a></div>
-          <div class="mail"><img class="one" src="img/mail.png" alt=""/><a href="#">info@navicadata.ru</a></div>
-          <div class="social"><img class="one" src="img/vk.png" alt=""/><img src="img/face.png" alt=""/></div>
+          <div class="tel"><img class="one" src="img/tel.png" alt=""/><a href="tel:+7 (987) 394-06-76">+7 (987) 394-06-76</a></div>
+          <div class="mail"><img class="one" src="img/mail.png" alt=""/><a href="A1.112@yandex.ru">A1.112@yandex.ru</a></div>
+          <div class="social"><a href="https://vk.com/"><img class="one" src="img/vk.png" alt=""/></a></div>
         </div>
         <div class="footer-bottom">
-          <div class="footer-text">@ Navicadata. Все права защищены.</div>
-          <div class="footer-text">разарботка сайта: <a href="#">beluga labs</a></div>
+          <div class="footer-text">Все права защищены.</div>
+          <div class="footer-text">разарботка сайта: <a href="#"> </a></div>
         </div>
       </div>
     </div>
@@ -220,9 +200,10 @@
     <script src="js/accordion-cookie.js"></script>
     <script src="js/owl.carousel.js"></script>
     <script src="js/simplebar.js"></script>
+    <script src="js/swiper.min.js"></script>
     <script src="js/fSelect.js"></script>
     <script src="js/jquery.fancybox.js"></script>
-    <script src="js/jquery.maskedinput.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.1.0/js/swiper.min.js"></script>
+    <script src="js/jquery.maskedinput.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.3.3/js/swiper.min.js"></script>
     <script src="js/scripts.js"></script>
     <script src="https://unpkg.com/systemjs@0.19.39/dist/system.src.js"></script>
     <script src="systemjs.config.js"></script>

@@ -249,4 +249,34 @@ $('.help__form-select6').fSelect({
    sync1.data('owl.carousel').to(number, 300, true);
  });
 
- 
+//  MAIN WORK SKRIPTS!!!!!!!!!!!!!!
+
+$ (document).ready(function(){
+    var link = $('.mobale-link');
+    // var link_active = $('.mobale-link_active')
+    var mobale = $('.mobale')
+    var nav_link = $('.mobale a');
+
+      link.click(function(){
+        link.toggleClass('mobale-link_active');
+        mobale.toggleClass('mobale_active');
+        
+      });
+      nav_link.click(function(){
+        link.toggleClass('mobale-link_active');
+        mobale.toggleClass('mobale_active');
+        
+      });
+});
+
+
+var swiper = new Swiper('.swiper-container', {
+  slidesPerView: 3,
+  slidesPerColumn: 2,
+  spaceBetween: 10,
+  pagination: {
+    el: '.swiper-pagination',
+    clickable: true,
+  },
+});
+
